@@ -1,0 +1,45 @@
+name: notes_app
+description: "Ứng dụng ghi chú cá nhân - iOS Style"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.5
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Cupertino Icons (iOS style)
+  cupertino_icons: ^1.0.8
+
+  # Supabase Backend
+  supabase_flutter: ^2.8.0
+
+  # State Management (Riverpod)
+  flutter_riverpod: ^2.6.1
+
+  # UI & Gestures
+  flutter_slidable: ^3.1.1   # Swipe-to-delete
+
+  # Date/Time utilities
+  intl: ^0.19.0
+  timeago: ^3.7.0
+
+  # UUID generation
+  uuid: ^4.5.1
+  
+  # Environment Variables
+  flutter_dotenv: ^5.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - .env
